@@ -1,1 +1,11 @@
+ion-tab-button {
+  --color: #818181a4;
+  --color-selected: #010101;
+}
 
+@media (prefers-color-scheme: dark) {
+  ion-tab-button {
+    --color: #81818170;
+    --color-selected: #f1f1f1;
+  }
+}
