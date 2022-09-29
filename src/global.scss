@@ -28,6 +28,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-ion-title {
+* {
   font-family: 'Rubik', sans-serif;
+  --ion-font-family: 'Rubik', sans-serif;
 }
