@@ -9,11 +9,28 @@
 <ion-content [fullscreen]="true">
   <ion-item color="light" class="value-input">
     <ion-label position="floating">VALOR 1</ion-label>
-    <ion-input type="number" [(ngModel)]="valor1"></ion-input>
+    <ion-input type="number" [(ngModel)]="value1"></ion-input>
   </ion-item>
 
   <ion-item color="light" class="value-input">
     <ion-label position="floating">VALOR 2</ion-label>
-    <ion-input type="number" [(ngModel)]="valor2"></ion-input>
+    <ion-input type="number" [(ngModel)]="value2"></ion-input>
   </ion-item>
+
+  <div class="basic-operations">
+    <ion-button color="tertiary" (click)="plus()">+</ion-button>
+    <ion-button color="tertiary" (click)="minus()">-</ion-button>
+    <ion-button color="tertiary" (click)="times()">*</ion-button>
+    <ion-button color="tertiary" (click)="divided()">/</ion-button>
+  </div>
+
+  <div class="greater-lower">
+    <ion-button color="tertiary" (click)="greater()">MAIOR</ion-button>
+    <ion-button color="tertiary" (click)="lower()">MENOR</ion-button>
+  </div>
+
+  <div class="result-operation">
+    <ion-label>RESULTADO: <span>{{ result }}</span></ion-label>
+    <ion-label>OPERAÇÃO: <span>{{ operation }}</span></ion-label>
+  </div>
 </ion-content>

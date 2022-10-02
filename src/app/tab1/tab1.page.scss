@@ -2,3 +2,37 @@ ion-item {
   --highlight-height: 1px;
   --highlight-color-valid: #e0e0e0;
 }
+
+.basic-operations {
+  margin-top: 0.5rem;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  ion-button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+.greater-lower {
+  display: flex;
+  justify-content: space-around;
+
+  ion-button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+.result-operation {
+  display: flex;
+  flex-direction: column;
+
+  ion-label {
+    font-size: 1.3rem;
+  }
+}
