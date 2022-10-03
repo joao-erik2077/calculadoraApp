@@ -1,0 +1,53 @@
+ion-content {
+  --background: #000000;
+}
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 3px solid white;
+  height: 15vh;
+  background-color: #272727;
+
+  p {
+    font-size: 10vh;
+  }
+}
+
+.m {
+  ion-button {
+    --background: #272727;
+    --color: white;
+    width: 16.6%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.operations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 78.5%;
+
+  .operations-buttons {
+    --background: #272727;
+    --color: white;
+    --border-radius: 0;
+
+    --border-color: #4b4b4b;
+    --border-style: solid;
+    --border-width: 1px;
+
+    padding: 0;
+    margin: 0;
+    height: auto;
+
+    font-size: 1.3rem;
+  }
+
+  .number-button {
+    --background: black;
+    --color: white;
+  }
+}
