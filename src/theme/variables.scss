@@ -7,8 +7,9 @@
   /* Tab2 variables */
   --content_background: #ffffff;
   --font_color: #000000;
-  --buttons_background: #ff0000;
-  --equals_background: #2458b1;
+  --buttons_background: #f5f5f5;
+  --equals_background: #89b4ff;
+  --buttons_border_color: #f1f1f1;
 
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -90,6 +91,8 @@
     --content_background: #000000;
     --font_color: #ffffff;
     --buttons_background: #272727;
+    --equals_background: #2458b1;
+    --buttons_border_color: #4b4b4b;
   }
 
   /*

@@ -40,7 +40,7 @@ ion-content {
     --color: var(--font_color);
     --border-radius: 0;
 
-    --border-color: #4b4b4b;
+    --border-color: var(--buttons_border_color);
     --border-style: solid;
     --border-width: 1px;
 
