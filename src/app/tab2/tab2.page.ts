@@ -7,8 +7,20 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  count: string = '';
   result: number;
 
   constructor() {}
 
+  addToCount(value: string) {
+    this.count += value;
+  }
+
+  clear() {
+    this.count = '';
+  }
+
+  removeLast() {
+    this.count = this.count.slice(0, this.count.length - 1);
+  }
 }
