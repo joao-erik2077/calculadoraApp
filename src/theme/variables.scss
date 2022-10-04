@@ -3,6 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  /* Tab2 variables */
+  --content_background: #ffffff;
+  --font_color: #000000;
+  --buttons_background: #ff0000;
+  --equals_background: #2458b1;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -77,6 +84,14 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
+  /* Dark theme tab2 variables */
+  :root {
+    --content_background: #000000;
+    --font_color: #ffffff;
+    --buttons_background: #272727;
+  }
+
   /*
    * Dark Colors
    * -------------------------------------------

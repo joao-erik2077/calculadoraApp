@@ -1,14 +1,15 @@
 ion-content {
-  --background: #000000;
+  --background: var(--content_background);
+  padding: 0;
+  margin: 0;
 }
 
 .result {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 3px solid white;
-  height: 15vh;
-  background-color: #272727;
+  height: 20%;
+  background-color: var(--buttons_background);
 
   p {
     font-size: 10vh;
@@ -16,10 +17,14 @@ ion-content {
 }
 
 .m {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 5%;
   ion-button {
-    --background: #272727;
-    --color: white;
-    width: 16.6%;
+    --background: var(--buttons_background);
+    --color: var(--font_color);
+    --border-radius: 0;
+    height: 100%;
     padding: 0;
     margin: 0;
   }
@@ -28,11 +33,11 @@ ion-content {
 .operations {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 78.5%;
+  height: 75%;
 
   .operations-buttons {
-    --background: #272727;
-    --color: white;
+    --background: var(--buttons_background);
+    --color: var(--font_color);
     --border-radius: 0;
 
     --border-color: #4b4b4b;
@@ -43,11 +48,14 @@ ion-content {
     margin: 0;
     height: auto;
 
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
-  .number-button {
-    --background: black;
-    --color: white;
+  .other-button {
+    --background: var(--content_background);
+  }
+
+  .equals-button {
+    --background: var(--equals_background);
   }
 }
