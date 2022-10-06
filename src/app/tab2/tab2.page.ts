@@ -24,6 +24,6 @@ export class Tab2Page {
   }
 
   resolve() {
-    this.operation = Function('return ' + this.operation.replace('x', '*').replace('÷', '/'))();
+    this.operation = Function('return ' + this.operation.replaceAll('x', '*').replaceAll('÷', '/'))();
   }
 }
