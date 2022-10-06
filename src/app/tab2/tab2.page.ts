@@ -7,20 +7,23 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  count: string = '';
-  result: number;
+  operation: any = '';
 
   constructor() {}
 
   addToCount(value: string) {
-    this.count += value;
+    this.operation += value;
   }
 
   clear() {
-    this.count = '';
+    this.operation = '';
   }
 
   removeLast() {
-    this.count = this.count.slice(0, this.count.length - 1);
+    this.operation = this.operation.slice(0, this.operation.length - 1);
+  }
+
+  resolve() {
+    this.operation = Function('return ' + this.operation.replace('x', '*').replace('÷', '/'))();
   }
 }

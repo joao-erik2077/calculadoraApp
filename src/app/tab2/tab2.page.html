@@ -8,7 +8,9 @@
 
 <ion-content [fullscreen]="true">
   <div class="result">
-    <p>{{ count }}</p>
+    <ion-item lines="none">
+      <ion-label>{{ operation }}</ion-label>
+    </ion-item>
   </div>
   <div class="m">
     <ion-button disabled>MC</ion-button>
@@ -20,15 +22,15 @@
   </div>
 
   <div class="operations">
-    <ion-button class="operations-buttons" (click)="addToCount('%')">%</ion-button>
+    <ion-button class="operations-buttons">%</ion-button>
     <ion-button class="operations-buttons" (click)="clear()">CE</ion-button>
     <ion-button class="operations-buttons" (click)="clear()">C</ion-button>
     <ion-button class="operations-buttons" (click)="removeLast()">
       <ion-icon name="backspace"></ion-icon>
     </ion-button>
     <ion-button class="operations-buttons" (click)="addToCount('1/')">1/x</ion-button>
-    <ion-button class="operations-buttons" (click)="addToCount('²')">x²</ion-button>
-    <ion-button class="operations-buttons" (click)="addToCount('√')">√x</ion-button>
+    <ion-button class="operations-buttons">x²</ion-button>
+    <ion-button class="operations-buttons">√x</ion-button>
     <ion-button class="operations-buttons" (click)="addToCount('÷')">÷</ion-button>
     <ion-button class="operations-buttons other-button" (click)="addToCount('7')">7</ion-button>
     <ion-button class="operations-buttons other-button" (click)="addToCount('8')">8</ion-button>
@@ -42,10 +44,10 @@
     <ion-button class="operations-buttons other-button" (click)="addToCount('2')">2</ion-button>
     <ion-button class="operations-buttons other-button" (click)="addToCount('3')">3</ion-button>
     <ion-button class="operations-buttons" (click)="addToCount('+')">+</ion-button>
-    <ion-button class="operations-buttons other-button" (click)="addToCount('±')">±</ion-button>
+    <ion-button class="operations-buttons other-button">±</ion-button>
     <ion-button class="operations-buttons other-button" (click)="addToCount('0')">0</ion-button>
     <ion-button class="operations-buttons other-button" (click)="addToCount(',')">,</ion-button>
-    <ion-button class="operations-buttons equals-button">=</ion-button>
+    <ion-button class="operations-buttons equals-button" (click)="resolve()">=</ion-button>
   </div>
 
 </ion-content>

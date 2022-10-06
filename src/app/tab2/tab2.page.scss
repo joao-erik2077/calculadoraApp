@@ -6,13 +6,17 @@ ion-content {
 
 .result {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
   height: 20%;
   background-color: var(--buttons_background);
 
-  p {
-    font-size: 2rem;
+  ion-item {
+    --background: none;
+    ion-label {
+      font-size: 2rem;
+    }
   }
 }
 
